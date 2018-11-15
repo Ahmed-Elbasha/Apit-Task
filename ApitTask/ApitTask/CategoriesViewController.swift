@@ -14,9 +14,16 @@ class CategoriesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.setDelegateForUIControls()
     }
-
-
+    
+    
+    // MARK: Delegation
+    
+    func setDelegateForUIControls() {
+        categoryTableView.delegate = self
+        categoryTableView.dataSource = self
+    }
 }
 
