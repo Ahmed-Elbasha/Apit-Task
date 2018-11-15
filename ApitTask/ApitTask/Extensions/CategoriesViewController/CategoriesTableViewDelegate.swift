@@ -14,6 +14,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") 
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") else {return UITableViewCell()}
+        return cell
     }
 }
