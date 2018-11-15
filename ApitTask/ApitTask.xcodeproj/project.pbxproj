@@ -14,6 +14,8 @@
 		7E40B331219DBE3D005B7B7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E40B32F219DBE3D005B7B7D /* LaunchScreen.storyboard */; };
 		7E40B33B219DC43C005B7B7D /* WebAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B33A219DC43C005B7B7D /* WebAPIConfiguration.swift */; };
 		7E40B340219DC632005B7B7D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B33F219DC632005B7B7D /* Category.swift */; };
+		7E40B344219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B343219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift */; };
+		7E40B347219DE1BA005B7B7D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B346219DE1BA005B7B7D /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7E40B332219DBE3D005B7B7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E40B33A219DC43C005B7B7D /* WebAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAPIConfiguration.swift; sourceTree = "<group>"; };
 		7E40B33F219DC632005B7B7D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7E40B343219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewDelegate.swift; sourceTree = "<group>"; };
+		7E40B346219DE1BA005B7B7D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		7E40B325219DBE31005B7B7D /* ApitTask */ = {
 			isa = PBXGroup;
 			children = (
+				7E40B341219DE07F005B7B7D /* Extensions */,
 				7E40B33C219DC5CE005B7B7D /* Model */,
 				7E40B339219DC419005B7B7D /* Extra Files */,
 				7E40B326219DBE31005B7B7D /* AppDelegate.swift */,
@@ -84,6 +89,31 @@
 				7E40B33F219DC632005B7B7D /* Category.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7E40B341219DE07F005B7B7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7E40B345219DE177005B7B7D /* Custom View Classes */,
+				7E40B342219DE0A0005B7B7D /* CategoriesViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7E40B342219DE0A0005B7B7D /* CategoriesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E40B343219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift */,
+			);
+			path = CategoriesViewController;
+			sourceTree = "<group>";
+		};
+		7E40B345219DE177005B7B7D /* Custom View Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7E40B346219DE1BA005B7B7D /* CategoryCell.swift */,
+			);
+			path = "Custom View Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,7 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E40B329219DBE31005B7B7D /* CategoriesViewController.swift in Sources */,
+				7E40B347219DE1BA005B7B7D /* CategoryCell.swift in Sources */,
 				7E40B327219DBE31005B7B7D /* AppDelegate.swift in Sources */,
+				7E40B344219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift in Sources */,
 				7E40B33B219DC43C005B7B7D /* WebAPIConfiguration.swift in Sources */,
 				7E40B340219DC632005B7B7D /* Category.swift in Sources */,
 			);
