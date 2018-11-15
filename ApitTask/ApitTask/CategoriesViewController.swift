@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  CategoriesViewController.swift
 //  ApitTask
 //
 //  Created by Ahmed Elbasha on 11/15/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CategoriesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
