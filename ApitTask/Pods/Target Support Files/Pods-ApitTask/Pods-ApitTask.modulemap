@@ -1,0 +1,6 @@
+framework module Pods_ApitTask {
+  umbrella header "Pods-ApitTask-umbrella.h"
+
+  export *
+  module * { export * }
+}
