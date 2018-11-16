@@ -20,17 +20,9 @@ class CategoriesViewController: UIViewController {
         
         self.setDelegateForUIControls()
         
-//        self.fetchJsonDataUsingAlamofire { (complete) in
-//            if complete {
-//                self.categoryTableView.reloadData()
-//            }
-//        }
+        self.performFetchJsonDataUsingAlamofireProcess()
         
-        self.fetchJsonDataFromHardCodedData { (complete) in
-            if complete {
-                self.categoryTableView.reloadData()
-            }
-        }
+        self.performFetchJsonDataFromHardCodedDataProcess()
     }
     
     
@@ -94,6 +86,15 @@ class CategoriesViewController: UIViewController {
         }
     }
     
+    func performFetchJsonDataUsingAlamofireProcess() {
+        self.fetchJsonDataUsingAlamofire { (complete) in
+            if complete {
+                self.categoryTableView.reloadData()
+            }
+        }
+
+    }
+    
     // MARK: JSON Parsing Using Hard Coded JSON Data.
     func fetchJsonDataFromHardCodedData(_ handler: @escaping(_ status: Bool) ->() ) {
         let categoriesArray = [[ "SIKEY" : 1, "LDESC" : "قطاع الاسكان", "ADESC" : "قطاع الاسكان", "VALUE" : nil, "ACTIVE" : true],
@@ -143,6 +144,14 @@ class CategoriesViewController: UIViewController {
         
         print(self.categories.count)
         handler(true)
+    }
+    
+    func performFetchJsonDataFromHardCodedDataProcess() {
+        self.fetchJsonDataFromHardCodedData { (complete) in
+            if complete {
+                self.categoryTableView.reloadData()
+            }
+        }
     }
 }
 

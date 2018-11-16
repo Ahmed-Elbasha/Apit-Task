@@ -15,6 +15,22 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as? CategoryCell else {return UITableViewCell()}
+        
+        let currentCategory = categories[indexPath.row]
+        
+        var departmentStatus = ""
+        
+        cell.departmentNameLabel.text = currentCategory.LDESC
+        cell.departmentInformationLabel.text = currentCategory.VALUE
+        
+        if currentCategory.ACTIVE == true {
+            departmentStatus =  "نشط"
+        } else {
+            departmentStatus = "غير نشط"
+        }
+        
+        cell.departmentActivityLabel.text = departmentStatus
+        
         return cell
     }
 }

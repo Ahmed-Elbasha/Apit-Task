@@ -69,7 +69,8 @@
 		7E40B325219DBE31005B7B7D /* ApitTask */ = {
 			isa = PBXGroup;
 			children = (
-				7E40B341219DE07F005B7B7D /* Extensions */,
+				7E40B345219DE177005B7B7D /* Custom View Classes */,
+				7E40B341219DE07F005B7B7D /* Delegates */,
 				7E40B33C219DC5CE005B7B7D /* Model */,
 				7E40B339219DC419005B7B7D /* Extra Files */,
 				7E40B326219DBE31005B7B7D /* AppDelegate.swift */,
@@ -98,13 +99,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7E40B341219DE07F005B7B7D /* Extensions */ = {
+		7E40B341219DE07F005B7B7D /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				7E40B345219DE177005B7B7D /* Custom View Classes */,
 				7E40B342219DE0A0005B7B7D /* CategoriesViewController */,
 			);
-			path = Extensions;
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		7E40B342219DE0A0005B7B7D /* CategoriesViewController */ = {
