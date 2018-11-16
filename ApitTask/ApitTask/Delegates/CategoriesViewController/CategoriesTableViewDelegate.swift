@@ -23,6 +23,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
         cell.departmentNameLabel.text = currentCategory.LDESC
         cell.departmentInformationLabel.text = currentCategory.VALUE
         
+        // Set Value for departmentStatus
         if currentCategory.ACTIVE == true {
             departmentStatus =  "نشط"
         } else {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E2B08AB219F5E0D00077015 /* CategoriesDelegation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B08AA219F5E0D00077015 /* CategoriesDelegation.swift */; };
+		7E2B08AD219F5E6000077015 /* CategoriesJSONParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2B08AC219F5E6000077015 /* CategoriesJSONParsing.swift */; };
 		7E40B327219DBE31005B7B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B326219DBE31005B7B7D /* AppDelegate.swift */; };
 		7E40B329219DBE31005B7B7D /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B328219DBE31005B7B7D /* CategoriesViewController.swift */; };
 		7E40B32C219DBE31005B7B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E40B32A219DBE31005B7B7D /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 
 /* Begin PBXFileReference section */
 		253BBE3194DB2E85EABF19AA /* Pods-ApitTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApitTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApitTask/Pods-ApitTask.debug.xcconfig"; sourceTree = "<group>"; };
+		7E2B08AA219F5E0D00077015 /* CategoriesDelegation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesDelegation.swift; sourceTree = "<group>"; };
+		7E2B08AC219F5E6000077015 /* CategoriesJSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesJSONParsing.swift; sourceTree = "<group>"; };
 		7E40B323219DBE31005B7B7D /* ApitTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApitTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E40B326219DBE31005B7B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E40B328219DBE31005B7B7D /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +52,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E2B08A8219F5DD600077015 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7E2B08A9219F5DE700077015 /* CategoriesViewController */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7E2B08A9219F5DE700077015 /* CategoriesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E2B08AA219F5E0D00077015 /* CategoriesDelegation.swift */,
+				7E2B08AC219F5E6000077015 /* CategoriesJSONParsing.swift */,
+			);
+			path = CategoriesViewController;
+			sourceTree = "<group>";
+		};
 		7E40B31A219DBE30005B7B7D = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +90,7 @@
 		7E40B325219DBE31005B7B7D /* ApitTask */ = {
 			isa = PBXGroup;
 			children = (
+				7E2B08A8219F5DD600077015 /* Extensions */,
 				7E40B345219DE177005B7B7D /* Custom View Classes */,
 				7E40B341219DE07F005B7B7D /* Delegates */,
 				7E40B33C219DC5CE005B7B7D /* Model */,
@@ -253,6 +275,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E40B329219DBE31005B7B7D /* CategoriesViewController.swift in Sources */,
+				7E2B08AB219F5E0D00077015 /* CategoriesDelegation.swift in Sources */,
+				7E2B08AD219F5E6000077015 /* CategoriesJSONParsing.swift in Sources */,
 				7E40B347219DE1BA005B7B7D /* CategoryCell.swift in Sources */,
 				7E40B327219DBE31005B7B7D /* AppDelegate.swift in Sources */,
 				7E40B344219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift in Sources */,
