@@ -10,11 +10,11 @@ import UIKit
 
 extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return categories.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as? CategoryCell else {return UITableViewCell()}
         return cell
     }
 }
