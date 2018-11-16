@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Alamofire
 
 class CategoriesViewController: UIViewController {
 
     @IBOutlet weak var categoryTableView: UITableView!
+    
+    var categories = [Category]()
     
     override func viewDidLoad() {
         super.viewDidLoad()

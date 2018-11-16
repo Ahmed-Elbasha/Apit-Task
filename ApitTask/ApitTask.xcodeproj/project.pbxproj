@@ -16,9 +16,11 @@
 		7E40B340219DC632005B7B7D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B33F219DC632005B7B7D /* Category.swift */; };
 		7E40B344219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B343219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift */; };
 		7E40B347219DE1BA005B7B7D /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E40B346219DE1BA005B7B7D /* CategoryCell.swift */; };
+		9377A6A410DABF85FF98C40A /* Pods_ApitTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E431008620C8304D9C8E170A /* Pods_ApitTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		253BBE3194DB2E85EABF19AA /* Pods-ApitTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApitTask.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApitTask/Pods-ApitTask.debug.xcconfig"; sourceTree = "<group>"; };
 		7E40B323219DBE31005B7B7D /* ApitTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApitTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E40B326219DBE31005B7B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E40B328219DBE31005B7B7D /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		7E40B33F219DC632005B7B7D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7E40B343219DE0C3005B7B7D /* CategoriesTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesTableViewDelegate.swift; sourceTree = "<group>"; };
 		7E40B346219DE1BA005B7B7D /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		DA55964070E774CD0D875915 /* Pods-ApitTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApitTask.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApitTask/Pods-ApitTask.release.xcconfig"; sourceTree = "<group>"; };
+		E431008620C8304D9C8E170A /* Pods_ApitTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApitTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9377A6A410DABF85FF98C40A /* Pods_ApitTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +53,8 @@
 			children = (
 				7E40B325219DBE31005B7B7D /* ApitTask */,
 				7E40B324219DBE31005B7B7D /* Products */,
+				D1AED9EA7231A10F92AD1D01 /* Pods */,
+				B381DE236C2AE0CAB63EFA2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +123,23 @@
 			path = "Custom View Classes";
 			sourceTree = "<group>";
 		};
+		B381DE236C2AE0CAB63EFA2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E431008620C8304D9C8E170A /* Pods_ApitTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1AED9EA7231A10F92AD1D01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				253BBE3194DB2E85EABF19AA /* Pods-ApitTask.debug.xcconfig */,
+				DA55964070E774CD0D875915 /* Pods-ApitTask.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +147,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7E40B335219DBE3D005B7B7D /* Build configuration list for PBXNativeTarget "ApitTask" */;
 			buildPhases = (
+				5DBD6E8396A6CAD8EAF36F47 /* [CP] Check Pods Manifest.lock */,
 				7E40B31F219DBE31005B7B7D /* Sources */,
 				7E40B320219DBE31005B7B7D /* Frameworks */,
 				7E40B321219DBE31005B7B7D /* Resources */,
+				E77A92A346646A78F1083E8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -181,6 +207,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5DBD6E8396A6CAD8EAF36F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ApitTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E77A92A346646A78F1083E8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ApitTask/Pods-ApitTask-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ApitTask/Pods-ApitTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7E40B31F219DBE31005B7B7D /* Sources */ = {
@@ -336,6 +401,7 @@
 		};
 		7E40B336219DBE3D005B7B7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 253BBE3194DB2E85EABF19AA /* Pods-ApitTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +419,7 @@
 		};
 		7E40B337219DBE3D005B7B7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA55964070E774CD0D875915 /* Pods-ApitTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
