@@ -27,6 +27,10 @@ class CategoriesViewController: UIViewController {
         self.performFetchJsonDataFromHardCodedDataProcess()
     }
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     
     
     
